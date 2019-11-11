@@ -1,0 +1,191 @@
+body{
+    padding:10px;
+    margin: 10px;
+    background-color: white;
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333 ;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+
+   
+    
+  }
+  
+  li {
+    float: right;
+
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-right: 120px;
+  
+  }
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+  }
+.header {
+    width: 100%;
+   height: 400px;
+  background-image: url("../images/abstract_colors_eola_darkgray.jpg");
+  height: 400px;;
+  
+}
+.abstract {
+  width: 100%;
+  opacity: 0.5;
+  position:relative;
+
+ 
+}
+.left-column {
+    display:block;
+    float: left;
+    width: 30%;
+    height:370px;
+   opacity: 0.8;
+    margin-top: 30px;
+    position: absolute;
+}
+
+
+.name {
+padding-top: 30px;
+margin-left:50%;
+
+color:#333333;
+
+}
+.web {
+color:#333333 ;
+margin-left: 55%;
+padding-top: 20px;
+}
+
+
+.right-column material-icons {
+    text-align: center;
+   
+}
+.right-column h2 {
+    text-align: center;
+   padding: 70px 0;
+}
+.button1, .button2 {
+    background-color: white;
+    color: #333333;
+    border:2px solid #333333;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px 32px;
+    margin: 4px  2px;
+    font-size: 16px;
+    text-decoration: none;
+    
+}
+.button {
+  position: absolute;  
+  padding-bottom: 40%;
+  margin-left:45%;
+  padding-top: 20px;
+}
+.download{
+
+    color: blue;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    padding: 15px 32px;
+    margin: 4px  2px;
+    font-size: 16px;
+    text-decoration: none;
+}
+.identity{
+    position: relative;
+    text-align: center;
+    color: black;
+  
+  }
+
+.natur {
+    width: 100%;
+    padding-top: 20px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.me {
+    position: absolute;
+    left:50%;
+    top:500px;
+    cursor: pointer;
+    padding: 20px;
+
+}
+.resume {
+    background-color:white;
+ 
+    height: 200px;
+    width: 100%;
+
+}
+.resume h2{
+    padding: 70px 0;
+    text-align: center;
+}
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.left-footer  {
+    background-color:  white;
+    width: 100%;
+    margin-right: 5px;
+    display: inline;
+    float:leftt;
+    height:100px;
+    margin-top: 10px;
+  
+   
+}
+.right-footer  {
+    background-color:white;
+    width: 100%;
+    margin-left: 5px;
+    display: inline;
+    float: right;
+    height:100px;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+#brief {
+ position: absolute;
+ margin-top: 200px;
+ margin-left: 350px;
+}
+#graduation {
+  position: absolute;
+ margin-top: 300px;
+ margin-left: 500px;
+ cursor: pointer;
+}
