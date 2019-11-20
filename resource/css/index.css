@@ -4,48 +4,45 @@ body{
     background-color: white;
 }
 
-.nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333 ;
-    width: 100%;
-    position: fixed;
-    top: 0%;
-
-   
+ul.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
     
   }
   
-  li {
-   float: right;
-
+  ul.nav li {float: left;}
+  ul.nav li.abaut {
+    float: right;
   }
   
-  li a {
+  ul.nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-right: 120px;
   
   }
-  li a:hover:not(.active) {
-    background-color: #111;
+  ul.nav li a:hover:not(.active) {background-color: #111;}
+  ul.nav li a.active {background-color: #4CAF50;}
+ 
+
+  @media screen and (max-width: 1500px) {
+    ul.nav li.abaut ,
+    ul.nav li {float: none;}
   }
-  
-  .active {
-    background-color: #4CAF50;
-  }
+
+
 .header img {
   width: 100%;
   background-repeat: no-repeat;
   object-fit: cover;
+  background-size: contain;
+  height: auto;
 
-  
-  
   
 }
 .abstract {
@@ -135,21 +132,46 @@ padding-top: 20px;
     
 }
 .me {
-    background-color:white;
-    height: 200px;
-    width: 100%;
-    cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:10px;
+ background-color: #4CAF50;
+ color: white;
+ font: 15px Verdana sans-serif;
+ padding: 8px 16px;
+ font-size: large;
+ cursor: pointer;
+ width: 150px;
+ height: 40px;
+ text-align: center;
+ 
 }
 .me h2 {
   padding: 70px 0;
   text-align: center;
 }
-.resume {
-    background-color:white;
-    height: 200px;
-    width: 100%;
-
+#btn{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size:10px;
+ background-color: #4CAF50;
+ color: white;
+ font: 15px Verdana sans-serif;
+ padding: 8px 16px;
+ font-size: large;
+ cursor: pointer;
+ width: 150px;
+ height: 40px;
+ text-align: center;
+ 
 }
+
 .resume h2{
     padding: 70px 0;
     text-align: center;
@@ -165,7 +187,6 @@ padding-top: 20px;
     margin-right: 5px;
     display: inline;
     float:leftt;
-    height:100px;
     margin-top: 10px;
   
    
@@ -176,35 +197,25 @@ padding-top: 20px;
     margin-left: 5px;
     display: inline;
     float: right;
-    height:100px;
     margin-left: 5px;
     margin-top: 10px;
 }
-
-#brief {
- position: absolute;
- margin-top: 200px;
- margin-left: 350px;
-}
-#graduation {
-  position: absolute;
- margin-top: 300px;
- margin-left: 500px;
- cursor: pointer;
+.web-design {
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 .flex {
-  background-color:white;
-  width: 100%;
-  height: 200px;
-  position: relative;
-  margin-top: 380px;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
-  padding: 70px 0;
+  justify-content: center;
+
+ 
 }
 .flex > i {
-  width: 100px;
-  margin: 10px;
   cursor: pointer;
+  margin: 20px;
 }
