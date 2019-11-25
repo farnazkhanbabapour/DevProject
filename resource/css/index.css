@@ -32,6 +32,11 @@ ul.nav{
   
     ul.nav li {float: none;}
   }
+  #closebtn:hover{
+     background-color: blue !important;
+     font-size: 50px;
+    
+  }
 
 
 .header img {
