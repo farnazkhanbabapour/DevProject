@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./resource/css/index.css" type="text/css" />
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="icon" href="./resource/images/farnaz.jpg" type="image/png"/>
@@ -61,11 +61,11 @@
               text-align: center;" >About Me </h2>
       </div>
 
-  
+        <!--    
         <p id="btn" onclick="document.getElementById('id01').style.display='block'" >Contact Me </p> 
          
  
-        <div id="id01" class="w3-modal">
+         <div id="id01" class="w3-modal"> 
           <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
       
             <div class="w3-center"><br>
@@ -89,10 +89,25 @@
                 <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Post it!</button>
             
               </div>
-            </form>
+            </form> 
       
       
           </div>
+        </div>  -->
+        <p class="btn" id="mybtn" >Contact Me</p>
+         <div class="modal" id="myForm">
+          <form   action="/action_page.php" class="form-container">
+            <div class="close">&times;</div>
+            <h6 id="hi" class="Hi"></h6>
+            <label  for="Name"><b>Name:</b></label>
+            <input class="name" type="text" id="name" oninput="textshow()" placeholder="Enter Name" name="name" required>
+            <label for="Email"><b>Email:</b></label>
+            <input class="email" type="text" placeholder="Enter Email" name="email" required>
+            <label for="Message"><b>MAssage:</b></label>
+            <textarea class="message" name="message" placeholder="Enter Message" cols="50" rows="4"></textarea>
+            <button class="submit">Post it!</button>
+          </form>
+
         </div>
 
     <div class="footer">
@@ -112,6 +127,8 @@
         <i  class="fa fa-instagram" style="font-size:48px;color: #e4405f;"> </i>
         <i class="fa fa-facebook-square" style="font-size:48px; color: #3b5998;"></i>
       </div>
+      <script src="./portfolio.js">
+      </script>
 
        
 
