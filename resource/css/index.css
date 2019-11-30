@@ -11,33 +11,33 @@ ul.nav{
   padding: 0;
   overflow: hidden;
   background-color: #333;
-    
+
   }
-  
+
  li {float: left;}
- 
+
   ul.nav li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  
+
   }
   ul.nav li a:hover:not(.active) {background-color: #111;}
   ul.nav li a.active {background-color: #4CAF50;}
- 
+
 
   @media screen and (max-width: 1500px) {
-  
+
     ul.nav li {float: none;}
   }
   #closebtn:hover{
      background-color: blue !important;
      font-size: 50px;
-    
-  }
 
+  }
+ 
 
 .header img {
   width: 100%;
@@ -46,14 +46,14 @@ ul.nav{
   background-size: contain;
   height: auto;
 
-  
+
 }
 .abstract {
   width: 100%;
   opacity: 0.5;
   position:relative;
 
- 
+
 }
 .left-column {
     display:block;
@@ -82,7 +82,7 @@ padding-top: 20px;
 
 .right-column material-icons {
     text-align: center;
-   
+
 }
 .right-column h2 {
     text-align: center;
@@ -100,10 +100,10 @@ padding-top: 20px;
     margin: 4px  2px;
     font-size: 16px;
     text-decoration: none;
-    
+
 }
 .button {
-  position: absolute;  
+  position: absolute;
   padding-bottom: 40%;
   margin-left:45%;
   padding-top: 20px;
@@ -123,13 +123,49 @@ padding-top: 20px;
     position: relative;
     text-align: center;
     color: black;
-  
+
   }
   .center {
+    background-image: url("../images/mitte.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    height:500px;
+    margin-top: 60px;
+    width: 100%; 
     position: relative;
-    display: block;
-    
   }
+  .text {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 90px;
+  }
+  .me{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 300px;
+    padding: 8px 16px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: large;
+  }
+  @media only screen and (max-width: 600px){
+    .text{
+      font-size: 12px;
+    }
+    .me{
+      width: 75px;
+      height: 20px;
+      font-size: 10px;
+      padding:4px 8px ;
+      margin-top: 280px;
+    }
+  }
+
+ 
+
+
 
 .photo {
     width: 100%;
@@ -138,36 +174,31 @@ padding-top: 20px;
     background-repeat: no-repeat;
     opacity: 0.8;
     padding-top: 80px;
-    
+
 }
-@media only screen and (min-width: 768px) {
-.text, .me {
+/* @media only screen and (min-width: 768px) {
+..me, .text {
   position: absolute;
   top: 280px;
   left: 40px;
   font-size: larger;
 }
+} */
 
-}
 @media only screen and (min-width: 600px) {
-  .text, .me, .btn {
+   .btn {
     text-align: center;
   }
-  
   }
-  
 
 
-.me h2 {
-  padding: 70px 0;
-  text-align: center;
-}
+
+
+
 .btn{
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
   font-size:10px;
  background-color: #4CAF50;
  color: white;
@@ -178,7 +209,7 @@ padding-top: 20px;
  width: 150px;
  height: 40px;
  text-align: center;
- 
+
 }
 .modal{
   display: none;
@@ -190,9 +221,9 @@ padding-top: 20px;
   width: 100%;
   height: 100%;
   overflow: auto;
- background-color: rgb(0,0,0); 
+ background-color: rgb(0,0,0);
  background-color: rgba(0,0,0,0.4);
- 
+
 }
 .form-container {
   position: relative;
@@ -252,8 +283,8 @@ padding-top: 20px;
   .left-footer, .right-footer {
     margin: 10px;
     padding: 20px;
-  } 
-   
+  }
+
 }
 
 
@@ -274,7 +305,7 @@ padding-top: 20px;
   display: flex;
   justify-content: center;
 
- 
+
 }
 .flex > i {
   cursor: pointer;
